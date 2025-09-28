@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishwarya G - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #F9FAFB; color: #1F2937; }
+        .content-card { padding: 4rem 3rem; background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .section-heading { color: #2563EB; border-bottom: 2px solid #DBEAFE; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .skill-item { background-color: #E0F2F7; color: #0891B2; padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-weight: 500; font-size: 0.875rem; }
+    </style>
+</head>
+<body>
+    <div id="app" class="relative min-h-screen">
+        <header class="w-full bg-white shadow-sm border-b border-gray-100">
+            <div class="max-w-6xl mx-auto py-4 px-6 lg:px-12 flex justify-between items-center">
+                <div class="text-sm font-medium text-gray-800">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gray-500">Computer Science Portfolio</p>
+                    <p class="text-lg font-bold">Aishwarya G - Resume</p>
+                </div>
+                <a href="index.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 flex items-center">
+                    <i data-lucide="arrow-left" class="w-4 h-4 mr-1"></i> Back to Bio-data
+                </a>
+            </div>
+        </header>
+
+        <main class="max-w-6xl mx-auto px-6 lg:px-12 py-16">
+            <section class="content-card">
+                <h1 class="text-4xl font-extrabold mb-8 text-gray-900 section-heading">Technical Skills Stack</h1>
+
+                <!-- Skills Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-700">Languages & Core Concepts</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-item">C++</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">SQL</span>
+                            <span class="skill-item">OOP</span>
+                            <span class="skill-item">DSA</span>
+                            <span class="skill-item">OS</span>
+                            <span class="skill-item">DBMS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-700">Web & Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-item">HTML/CSS</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Flask</span>
+                            <span class="skill-item">Streamlit</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">AWS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-700">ML & Data</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-item">scikit-learn</span>
+                            <span class="skill-item">Pandas</span>
+                            <span class="skill-item">NumPy</span>
+                            <span class="skill-item">Matplotlib</span>
+                            <span class="skill-item">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl font-extrabold mt-16 mb-8 text-gray-900 section-heading">Education</h1>
+                
+                <!-- Education -->
+                <div class="space-y-4 mb-12">
+                    <div class="border-l-4 border-gray-300 pl-6 relative">
+                        <h3 class="text-2xl font-bold text-gray-800">BE in Computer Science and Engineering</h3>
+                        <p class="text-lg font-semibold text-gray-700">RV INSTITUTE OF TECHNOLOGY AND MANAGEMENT, Bangalore, India</p>
+                        <p class="text-md font-bold text-blue-600">CGPA: 8.94</p>
+                        <p class="text-sm text-gray-500">2023 - 2027</p>
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl font-extrabold mb-8 text-gray-900 section-heading">Professional Experience</h1>
+                
+                <!-- Work Experience -->
+                <div class="space-y-8">
+                    <div class="border-l-4 border-blue-400 pl-6 relative">
+                        <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <h3 class="text-2xl font-bold text-gray-800">Web Developer Intern</h3>
+                        <p class="text-lg font-semibold text-gray-700">The Business Sentinel (Remote)</p>
+                        <p class="text-sm text-gray-500 mb-3">Nov. 2023 – Jan. 2024</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Developed the frontend of the company landing page using HTML, CSS, and Tailwind CSS.</li>
+                            <li>Ensured a clean and responsive layout across various devices and screen sizes, enhancing user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+
+        <footer class="mt-20 py-8 border-t border-gray-200 bg-white">
+            <div class="max-w-6xl mx-auto px-6 lg:px-12 text-sm text-gray-500 text-center">
+                <p>Resume page. &copy; 2025 Aishwarya G.</p>
+            </div>
+        </footer>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

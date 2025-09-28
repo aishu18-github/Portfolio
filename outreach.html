@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics & Achievements - Aishwarya G</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for aesthetic CS symbols -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for the clean, light, professional aesthetic */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Very light cool gray */
+            color: #1f2937; /* Dark slate gray for text */
+        }
+        .main-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+        }
+        .accent-color {
+            color: #06b6d4; /* Teal for high-impact accents */
+        }
+        .achievement-card {
+            border-left: 4px solid #06b6d4;
+            padding-left: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .achievement-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="w-full max-w-4xl mx-auto pt-8 px-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center text-gray-500 hover:text-gray-900 transition duration-150">
+            <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i>
+            <span class="font-medium text-sm">← Back to Bio-data</span>
+        </a>
+        <h1 class="text-3xl font-extrabold text-gray-900">Academics</h1>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="main-card rounded-2xl p-6 md:p-10 mb-8">
+
+            <!-- CGPA Highlight -->
+            <div class="mb-10 text-center">
+                <p class="text-lg font-semibold text-gray-500 mb-1">Current Academic Standing</p>
+                <div class="inline-block p-4 rounded-xl bg-green-50 shadow-md">
+                    <span class="text-5xl font-extrabold accent-color tracking-tight">8.94</span>
+                    <span class="text-xl font-bold text-gray-700 ml-2">CGPA</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">BE in Computer Science and Engineering, RVITM</p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Certifications & Specialized Training</h2>
+
+            <!-- Certifications List -->
+            <div class="space-y-6">
+                
+                <!-- CS50x -->
+                <div class="achievement-card">
+                    <h3 class="text-xl font-semibold text-gray-900 flex items-center mb-1">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 mr-3 accent-color"></i>
+                        CS50x: Introduction to Computer Science
+                    </h3>
+                    <p class="text-gray-700">Harvard University</p>
+                    <p class="text-sm text-gray-500 mt-1">Sep. 2023 | Fundamental understanding of intellectual enterprises of CS and the art of programming.</p>
+                </div>
+
+                <!-- Walmart Job Simulation -->
+                <div class="achievement-card">
+                    <h3 class="text-xl font-semibold text-gray-900 flex items-center mb-1">
+                        <i data-lucide="wrench" class="w-5 h-5 mr-3 accent-color"></i>
+                        Advanced Software Engineering Job Simulation
+                    </h3>
+                    <p class="text-gray-700">Walmart USA (Forage)</p>
+                    <p class="text-sm text-gray-500 mt-1">Aug. 2024 | Hands-on experience with industry-standard software development practices.</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6 border-b pb-2">Competitions & Recognition</h2>
+
+            <!-- Hackathon -->
+            <div class="space-y-6">
+                <div class="achievement-card">
+                    <h3 class="text-xl font-semibold text-gray-900 flex items-center mb-1">
+                        <i data-lucide="award" class="w-5 h-5 mr-3 accent-color"></i>
+                        Vikasya Hackathon 2025 Finalist
+                    </h3>
+                    <p class="text-gray-700">Nationwide Innovation Challenge</p>
+                    <p class="text-sm text-gray-500 mt-1">Apr. 2025 | Selected among the top 30 teams nationwide, demonstrating strong problem-solving and rapid prototyping skills.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

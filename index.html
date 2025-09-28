@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishwarya G - CS Portfolio | Bio-data</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Define Inter font and set body defaults */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            color: #1F2937; /* Dark text */
+        }
+        /* --- Custom CS Button Styles (Unique Navigation) --- */
+        .btn-link {
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s;
+            width: 140px; /* Wider button */
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem; /* Rounded square */
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+        }
+        .btn-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-link .icon {
+            margin-bottom: 0.5rem;
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Color definitions (Tech-focused palette) */
+        .btn-resume { background-color: #E0F2F7; color: #0891B2; } /* Cyan/Teal */
+        .btn-projects { background-color: #DBEAFE; color: #2563EB; } /* Blue */
+        .btn-research { background-color: #EDE9FE; color: #7C3AED; } /* Violet (Academics) */
+        .btn-experience { background-color: #FEE2E2; color: #DC2626; } /* Red/Rose (Experience/Extracurricular) */
+        .btn-contact { background-color: #F0F0F0; color: #374151; } /* Light Gray (Contact) */
+
+        /* Original professional card style */
+        .content-card {
+             padding: 4rem 3rem;
+             background-color: white;
+             border-radius: 1.5rem;
+             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        }
+    </style>
+</head>
+<body> 
+
+    <!-- Main Application Container -->
+    <div id="app" class="relative min-h-screen">
+
+        <!-- Header (Simple Title and Subtitle) -->
+        <header class="w-full bg-white shadow-sm border-b border-gray-100">
+            <div class="max-w-6xl mx-auto py-4 px-6 lg:px-12">
+                <p class="text-xs font-semibold uppercase tracking-widest text-gray-500">Computer Science Portfolio | Bio-data</p>
+                <p class="text-sm font-medium text-gray-800" id="header-name">Aishwarya G</p>
+            </div>
+        </header>
+
+
+        <!-- Dynamic Content Section -->
+        <main class="max-w-6xl mx-auto px-6 lg:px-12 py-16">
+
+            <!-- 1. HERO SECTION (Bio-data Area with Navigation Buttons) -->
+            <section id="hero" class="content-card flex flex-col lg:flex-row items-start justify-center">
+                
+                <!-- Left: Profile Image -->
+                <div class="w-full lg:w-1/3 flex justify-center lg:justify-start mb-8 lg:mb-0">
+                    <div class="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-gray-200 shadow-xl relative overflow-hidden">
+                         <img id="profile-pic" src="Photo.jpeg" alt="Profile Picture"
+                            class="w-full h-full object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x400/F3F4F6/6B7280?text=A.G.';">
+                    </div>
+                </div>
+
+                <!-- Right: Name and Bio -->
+                <div class="w-full lg:w-2/3 lg:pl-16">
+                    <h1 id="hero-name" class="text-5xl sm:text-6xl font-extrabold mb-4 text-gray-900">Aishwarya G</h1>
+                    <p id="hero-title" class="text-xl font-semibold mb-6 text-gray-700">Computer Science Student</p>
+                    
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Bio-data</h2>
+                    <p id="bio-summary" class="text-lg text-gray-600 leading-relaxed mb-6">Computer Science undergraduate with strong expertise in software development, data analytics, and problem-solving. Experienced in building intelligent systems, full-stack ML platforms, and data-driven solutions, including a published IEEE paper on fraud detection. Skilled in translating complex data into actionable insights for real-world applications in technology.</p>
+                    <p class="text-lg font-bold text-gray-700">Current CGPA: 8.94</p>
+                    
+                    <!-- Square Button Navigation (CS-themed) -->
+                    <h3 class="text-xl font-bold mb-6 text-gray-700 pt-8">Explore My Portfolio:</h3>
+                    <div id="nav-buttons" class="flex flex-wrap justify-start gap-6 pt-2">
+                        <!-- Resume Page -->
+                        <a href="resume.html" class="btn-link btn-resume">
+                            <i data-lucide="code" class="icon"></i>
+                            Resume
+                        </a>
+                        <!-- Projects & Publications Page -->
+                        <a href="research.html" class="btn-link btn-projects">
+                            <i data-lucide="monitor" class="icon"></i>
+                            Projects
+                        </a>
+                        <!-- Academics Page -->
+                        <a href="outreach.html" class="btn-link btn-research">
+                            <i data-lucide="graduation-cap" class="icon"></i>
+                            Academics
+                        </a>
+                        <!-- Experience & Interests Page -->
+                        <a href="hobbies.html" class="btn-link btn-experience">
+                            <i data-lucide="sparkles" class="icon"></i>
+                            Interests
+                        </a>
+                        <!-- Contact Page -->
+                        <a href="cv_contact.html" class="btn-link btn-contact">
+                            <i data-lucide="mail" class="icon"></i>
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- Footer (Clean and minimal) -->
+        <footer class="mt-20 py-8 border-t border-gray-200 bg-white">
+            <div class="max-w-6xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>Bio-data page.</p>
+                <p>Email: <a id="footer-email" href="mailto:aishu72345@gmail.com" class="hover:text-gray-700">aishu72345@gmail.com</a></p>
+                <a id="footer-github" href="https://github.com/aishwarya-g-622b3b293" target="_blank" class="hover:text-gray-700 mt-2 sm:mt-0">LinkedIn: Aishwarya G</a>
+                <p class="mt-2 sm:mt-0">&copy; <span id="current-year"></span> Aishwarya G. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // --- 1. Data Structure (Centralized Data) ---
+        const portfolioData = {
+            name: "Aishwarya G",
+            title: "Computer Science Student ",
+            email: "aishu72345@gmail.com",
+            github: "www.linkedin.com/in/aishwarya-g-622b3b293", // Using LinkedIn for the placeholder link
+            profilePicUrl: "Photo.jpeg", 
+            bio: {
+                summary: "Computer Science undergraduate with strong expertise in software development, data analytics, and problem-solving. Experienced in building intelligent systems, full-stack ML platforms, and data-driven solutions, including a published IEEE paper on fraud detection. Skilled in translating complex data into actionable insights for real-world applications in finance and technology.",
+            },
+        };
+
+        /**
+         * Initializes the application state and injects data into the HTML.
+         */
+        function initializeApp() {
+            // Hero section updates
+            document.getElementById('hero-name').textContent = portfolioData.name;
+            document.getElementById('hero-title').textContent = portfolioData.title;
+            document.getElementById('bio-summary').textContent = portfolioData.bio.summary;
+            document.getElementById('profile-pic').src = portfolioData.profilePicUrl;
+
+            // Header updates
+            document.getElementById('header-name').textContent = portfolioData.name;
+
+            // Footer updates (NOTE: GitHub footer link is changed to LinkedIn for this data set)
+            document.getElementById('footer-email').href = `mailto:${portfolioData.email}`;
+            document.getElementById('footer-email').textContent = portfolioData.email;
+            document.getElementById('footer-github').href = `https://${portfolioData.github}`;
+            document.getElementById('footer-github').textContent = `LinkedIn: Aishwarya G`;
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Render Lucide Icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+
+        // Run the initialization function when the page is fully loaded
+        window.onload = initializeApp;
+
+    </script>
+</body>
+</html>
